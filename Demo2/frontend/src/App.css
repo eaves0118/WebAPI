@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f7f7f7;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+nav {
+  margin-bottom: 15px;
+}
+nav a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
+}
+form {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+input,
+select,
+button {
+  padding: 8px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+th {
+  background: #2f855a;
+  color: #fff;
+}
+tr:hover {
+  background: #f9f9f9;
+}
+.actions button {
+  margin-right: 6px;
+}
+@media (max-width: 600px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+  th {
+    display: none;
+  }
+  td {
+    position: relative;
+    padding-left: 50%;
+  }
+  td::before {
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+}
+.toast {
+  padding: 8px;
+  border-radius: 4px;
+  margin: 8px 0;
+}
+.toast.success {
+  background: #e6ffed;
+  border: 1px solid #b7f0c4;
+}
+.toast.error {
+  background: #ffe6e6;
+  border: 1px solid #f1b6b6;
+}
